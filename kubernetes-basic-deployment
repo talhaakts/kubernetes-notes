@@ -1,0 +1,10 @@
+//kubectl create deployment hello-nginx --image=nginx    #ngnix uygulaması için bir tane deployment oluşturdum
+//kubectl expose deployment hello-nginx --type=NodePort --port=80   #nginx uygulamasına dışarıdan erişilebilmesi için expose ederek bir servis oluşturdum
+//kubectl get services hello-nginx       #servisin durumunu kontrol ettim
+//kubectl exec -it hello-nginx-random-id -- /bin/bash  # nginx default sayfasını değiştirdim
+//apt update 
+//apt install vim
+//vim /usr/share/nginx/html/index.html
+//exit
+//kubectl port-forward service/hello-nginx 80:80 --address"0.0.0.0"  # makinemi çinli botların erişimine sundum :o
+
